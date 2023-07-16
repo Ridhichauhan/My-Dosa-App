@@ -24,54 +24,30 @@ const MenuItems = () => {
   };
 
   return (
-    <div>
-      <div className="flex justify-center items-center mt-4">
-    
-    <input type="text" placeholder="enter your name" className="bg-red-500"/>
-  </div>
-  <div className="relative">
+    <div className="">
+      <div className="flex h-[130px] justify-center  ml-[-10vh]">
+        <form className={`form  ${isOpen ? "hidden" : ""}`}>
+          <div className="flex input-group justify-center items-center sm:ml-12 ">
+            <div className="relative">
               <AiOutlineSearch
-                className="absolute max-sm:ml-12 ml-2 mt-4 left-0"
+                className="absolute max-sm:ml-16 ml-2 mt-4 left-0"
                 color="gray"
               />
               <input
                 type="text"
-                style={{ paddingLeft: 28 }}
-                className={`input searchdown ${isOpen ? "disabled" : ""}`}
+                className={` input searchdown ${isOpen ? "disabled" : ""}`}
                 readOnly={isOpen}
                 value={searchQuery}
                 onChange={handleSearch}
               />
-              <label className="placeholder max-sm:ml-12">Search Item</label>
+              <label className="placeholder max-sm:ml-16">Search Item</label>
             </div>
-  
-     
-    
-      <div className="flex h-[130px] justify-around ml-[-17vh]">
-      
-        <form className={`form max-sm:ml-14 ${isOpen ? "hidden" : ""}`}>
-          <div className="flex space-x-4 input-group">
-          {/* <div className="relative">
-              <AiOutlineSearch
-                className="absolute max-sm:ml-12 ml-2 mt-4 left-0"
-                color="gray"
-              />
-              <input
-                type="text"
-                style={{ paddingLeft: 28 }}
-                className={`input searchdown ${isOpen ? "disabled" : ""}`}
-                readOnly={isOpen}
-                value={searchQuery}
-                onChange={handleSearch}
-              />
-              <label className="placeholder max-sm:ml-12">Search Item</label>
-            </div> */}
           </div>
         </form>
       </div>
       <div className="scroll-container">
         {filteredMenuItems.map((item, index) => (
-          <div key={index} onClick={()=> navigateToPage(item.id)}>
+          <div key={index} onClick={() => navigateToPage(item.id)}>
             <div className="flex justify-center mt-[-16px]">
               <div className="flex items-center space-x-2 w-[396px] p-4 boxhover downbg">
                 <img src={item.image} className="h-18 w-20 mt-2" alt="" />
