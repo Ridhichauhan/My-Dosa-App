@@ -14,8 +14,6 @@ function App() {
       <Route path="/FoodItems/:id" element={<FoodItems/>} />
       <Route path='/' element={<FoodItems/>}/>
       <Route path='Dosa' element={<Dosa/>}/>
-
-     
     </Routes>
   </Router>
     </div>

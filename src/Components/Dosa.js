@@ -4,24 +4,24 @@ import {
   AiOutlineMail,
   AiOutlineMenu,
 } from "react-icons/ai";
-import { CiLocationOn } from "react-icons/ci";
 import "./Dosa.css";
 import "../utils/css/Gloablcss.css";
-import { IoIosCall, IoMdCall } from "react-icons/io";
+import { IoMdCall } from "react-icons/io";
 import { ModalComponent } from "./Modal";
 import MenuItem from "./MenuItems";
-import { MdLocationOn, MdLocationPin } from "react-icons/md";
-import { useDisclosure } from "@mantine/hooks";
-import { Modal } from "@mantine/core";
-import img from "../../src/oval.png";
+import { MdLocationOn } from "react-icons/md";
 
 const Dosa = () => {
   const [isOpen] = useState(false);
   const [DownloadOpen, setIsDownloadOpen] = useState(false);
-  const [opened, { close, open }] = useDisclosure(false);
+  const [showModal, setShowModal] = React.useState(false);
+
+  const googleMapsUrl =
+    "https://www.google.com/maps/place/Falcon+Cafe+Lounge/@30.6958945,76.8384238,15z/data=!4m2!3m1!1s0x0:0xa9092e84e9a1ae69?sa=X&ved=2ahUKEwj2geG56JeAAxVJat4KHViPBwEQ_BJ6BAhcEAA&ved=2ahUKEwj2geG56JeAAxVJat4KHViPBwEQ_BJ6BAh-EAg";
 
   return (
     <div className="fixed w-screen">
+  
       <div
         className={`flex flex-row items-center justify-between p-2 w-full creamcolor ${
           isOpen ? "fixed" : ""
@@ -31,58 +31,88 @@ const Dosa = () => {
           <h1 className="circle circle-text  mb-4 xl:w-8 xl:h-8 xl:mb-6 mobile-hidden">
             x
           </h1>
-          <div className="flex web-hidden">
+          <div className="web-view-only  ">
             <AiOutlineMenu
               color="orange"
               size="0.6em"
               className="mt-[8px] ml-[-12px]"
-              onClick={open}
+              onClick={() => setShowModal(true)}
             />
-            <>
-              <Modal
-                opened={opened}
-                centered
-                onClose={close}
-                className="my-custom-modal"
-              >
-                <div className="flex justify-center items-center relative h-[70vh]">
-                  <div className="flex justify-center items-center w-40 h-[398px] z-0  browncolor rounded-full ">
-                    <div className="  h-80 w-20 grid justify-around align-middle items-center ">
-                      <div>
-                        <MdLocationPin
-                          size="2.5em"
-                          className="flex ml-4"
-                          color="red"
-                        />
-                        <h1 className="text-black font-bold text-lg">
-                          Location
-                        </h1>
-                      </div>
-                      <div>
-                        <IoIosCall
-                          size="2.5em"
-                          className="flex ml-4"
-                          color="green"
-                        />
-                        <h1 className="text-black font-bold ml-3 text-lg">
-                          Call
-                        </h1>
-                      </div>
-                      <div>
-                        <img
-                          src="menuuu.png"
-                          alt="pic"
-                          className="h-10 w-12 ml-2 "
-                        />
-                        <h1 className="text-black font-bold ml-3 text-lg">
-                          Menu
-                        </h1>
+            {showModal ? (
+              <>
+                <div className="fixed top-0 left-0 w-full h-full mainmodal items-center flex overflow-x-hidden overflow-y-auto  inset-0 z-50 outline-none focus:outline-none">
+                  <div className="absolute top-0 left-0 h-full w-full">
+                    <div className="border-0 rounded-lg shadow-lg  outline-none focus:outline-none">
+                      <div className="bg-transparent h-screen w-screen justify-center flex">
+                        <div className="rounded-full modelheight grid justify-center align-middle items-center backdrop ">
+                          <div className="absolute top-[6vh] right-[28vw]">
+                            <p
+                              className="closeicon"
+                              onClick={() => setShowModal(false)}
+                            >
+                              <h1 className="text-[22px] text-white font-bold">
+                                X{" "}
+                              </h1>
+                            </p>
+                          </div>
+                          <div className="flex flex-col items-center">
+                            <a
+                              href={googleMapsUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <img
+                                src="maps.png"
+                                className=" h-18 w-14 mt-4"
+                                alt="red"
+                              />
+                            </a>
+                            <h1 className="text-black font-bold text-2xl">
+                              {" "}
+                              Location
+                            </h1>
+                          </div>
+                          <div className="flex flex-col items-center">
+                            {" "}
+                            {/* Updated here */}
+                            <a href="tel:+919348557381">
+                              <img
+                                src="phone.png"
+                                className="h-30 w-28"
+                                alt=""
+                              />
+                            </a>
+                            <h1 className="text-black font-bold text-2xl mt-[-20px]">
+                              Call
+                            </h1>
+                          </div>
+                          <div className="flex flex-col items-center">
+                            {" "}
+                         
+                            <a
+                              href="https://drive.google.com/uc?export=download&id=1DAqm0pn7JQRa1C1tTKOKKS6Rq0FmzXFw"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <img
+                                src="menuuu.png"
+                                alt="pic"
+                                className="h-24 w-18 "
+                              />
+                            </a>
+                            <h1 className="text-black font-bold text-2xl mt-[-10px]">
+                              Menu
+                            </h1>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </Modal>
-            </>
+
+                <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+              </>
+            ) : null}
           </div>
           <h1 className="text-orange-500 font-bold xl:text-xl max-sm:text-[18px]">
             DOSA
@@ -104,7 +134,7 @@ const Dosa = () => {
               </svg>
             </button>
 
-            <ul class="dropdown-menu absolute  creamcolor w-40 hidden text-black mt-4 ">
+            <ul class="dropdown-menu absolute  creamcolor w-40 hidden text-black mt-4  z-10">
               <li className=" rounded-t flex items-center justify-center whitespace-no-wrap p-2">
                 <img src="play.png" alt="" className="h-6 w-6" />
                 <h1 class="text-[12px] ml-2">Play Store</h1>
@@ -193,7 +223,7 @@ const Dosa = () => {
           </div>
         </div>
 
-        <div className="flex web-hidden">
+        <div className="flex web-view-only">
           <ModalComponent isOpen={DownloadOpen}>
             <div className="bg-transparent rounded-lg p-10 ">
               <div
