@@ -107,6 +107,7 @@ export const chaats_menu = [
   { id: 13, name: "Samosa Chaat", price: { tax: 0.99, price: 9 } },
 ];
 
+
 export const Chinese_menu = [
   { id: 1, name: "Veg Fried Rice", price: { tax: 0.99, price: 9 } },
   { id: 2, name: "Panner Veg Fried Rice", price: { tax: 0.99, price: 9 } },
@@ -125,6 +126,16 @@ export const Chinese_menu = [
   { id: 15, name: "Veg Manchow Soup", price: { tax: 0.99, price: 9 } },
 ];
 
+export const burgers_menu =[
+  { id: 1, name: "Paneer kathi roll", price: { tax: 0.99, price:0.30 } },
+  { id: 2, name: "Paneer Tikka", price: { tax: 0.99, price: 0.95 } },
+  { id: 3, name: "Spring Roll", price: { tax: 0.99, price: 0.30 } },
+  { id: 4, name: "Dal Vada", price: { tax: 0.99, price: 0.95 } },
+  { id: 5, name: "Dahi Vada", price: { tax: 0.99, price: 1.00 } },
+  { id: 6, name: "Dhokla", price: { tax: 0.99, price: 1.00 } },
+  { id: 7, name: "Indian Veg Burger", price: { tax: 0.99, price: 0.25} },
+  { id: 8, name: "Paneer Veg Burger", price: { tax: 0.99, price: 0.95 } },
+]
 export const Kulcha_menu = [
   { id: 1, name: "Aloo Parantha", price: { tax: 0.99, price: 9 } },
   { id: 2, name: "Paneer Parntha", price: { tax: 0.99, price: 9 } },
@@ -134,6 +145,14 @@ export const Kulcha_menu = [
   { id: 6, name: "Tandoori Roti", price: { tax: 0.99, price: 9 } },
   { id: 7, name: "Buuter Naan", price: { tax: 0.99, price: 9 } },
   { id: 8, name: "Garlic Naan", price: { tax: 0.99, price: 9 } },
+];
+
+export const Bhatura_menu = [
+  { id: 1, name: "Alooi Poori", price: { tax: 0.99, price: 9 } },
+  { id: 2, name: "Chole Poori", price: { tax: 0.99, price: 9 } },
+  { id: 3, name: "Chole Bhatura", price: { tax: 0.99, price: 9 } },
+  { id: 4, name: "Extra Bhatura", price: { tax: 0.99, price: 9 } },
+  { id: 5, name: "Extra Poori", price: { tax: 0.99, price: 9 } },
 ];
 export const Drinks_menu = [
   { id: 1, name: "Tea", price: { tax: 0.99, price: 9 } },
@@ -148,13 +167,15 @@ export const Drinks_menu = [
   { id: 10, name: "Limca", price: { tax: 0.99, price: 9 } },
   { id: 11, name: "Thumps Up", price: { tax: 0.99, price: 9 } },
 ];
-export const Bhatura_menu = [
-  { id: 1, name: "Alooi Poori", price: { tax: 0.99, price: 9 } },
-  { id: 2, name: "Chole Poori", price: { tax: 0.99, price: 9 } },
-  { id: 3, name: "Chole Bhatura", price: { tax: 0.99, price: 9 } },
-  { id: 4, name: "Extra Bhatura", price: { tax: 0.99, price: 9 } },
-  { id: 5, name: "Extra Poori", price: { tax: 0.99, price: 9 } },
+export const Kids_menu = [
+  { id: 1, name: "Kids Plain Dosa", price: { tax: 0.99, price: 9 } },
+  { id: 2, name: "Kids Cone Dosa", price: { tax: 0.99, price: 9 } },
+  { id: 3, name: "Kids Chesse Dosa", price: { tax: 0.99, price: 9 } },
+  { id: 4, name: "Kids Choclate Dosa", price: { tax: 0.99, price: 9 } },
+  
+  
 ];
+
 
 export const items_lists = [
   Plain_Dosa,
@@ -164,7 +185,11 @@ export const items_lists = [
   Idly_menu,
   chaats_menu,
   Chinese_menu,
+  burgers_menu,
   Kulcha_menu,
+  Bhatura_menu,
   Drinks_menu,
-  Bhatura_menu
+  Kids_menu,
+  
+ 
 ];

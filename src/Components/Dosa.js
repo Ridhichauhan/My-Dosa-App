@@ -21,7 +21,6 @@ const Dosa = () => {
 
   return (
     <div className="fixed w-screen">
-  
       <div
         className={`flex flex-row items-center justify-between p-2 w-full creamcolor ${
           isOpen ? "fixed" : ""
@@ -57,7 +56,7 @@ const Dosa = () => {
                           </div>
                           <div className="flex flex-col items-center">
                             <a
-                              href={googleMapsUrl}
+                              href={"https://www.google.com/maps/place/Falcon+Cafe+Lounge/@30.6958945,76.8384238,15z/data=!4m2!3m1!1s0x0:0xa9092e84e9a1ae69?sa=X&ved=2ahUKEwj2geG56JeAAxVJat4KHViPBwEQ_BJ6BAhcEAA&ved=2ahUKEwj2geG56JeAAxVJat4KHViPBwEQ_BJ6BAh-EAg"}
                               target="_blank"
                               rel="noopener noreferrer"
                             >
@@ -88,7 +87,6 @@ const Dosa = () => {
                           </div>
                           <div className="flex flex-col items-center">
                             {" "}
-                         
                             <a
                               href="https://drive.google.com/uc?export=download&id=1DAqm0pn7JQRa1C1tTKOKKS6Rq0FmzXFw"
                               target="_blank"
@@ -272,7 +270,6 @@ const Dosa = () => {
           </a>
         </div>
       </div>
-
       <MenuItem />
     </div>
   );

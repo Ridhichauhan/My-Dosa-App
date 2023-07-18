@@ -27,7 +27,7 @@ const sectionData = [
       id:5,
       image: 'idly.png',
       title: 'IDLY-VADA SAMBAR',
-      description:'Idly is a rice cake made bu steaming and Vada is a fried  donut shaped snack.',
+      description:'Idly is a rice cake made by steaming and Vada is a fried  donut shaped snack.',
     },
 
     {
@@ -44,23 +44,36 @@ const sectionData = [
     },
     {
       id:8,
-      image: 'prantha.png',
+      image:"burr.png",
+      title:'APPETIZERS & BURGERS',
+      description:"Variety of before meal options & burgers."
+    },
+    {
+      id:8,
+      image: 'Kulcha.png',
       title: 'PARANTHA & KULCHA',
       description:'Stuffed flat bread made of all-purpose flour or wheat flour cooked in clay oven.',
     },
-  
     {
       id:9,
+      image :'bhatura.png',
+      title:'BHATURA',
+      description:'Fluffy deep-fried bread made from all purpose flour or wheet flour.'
+    },
+    {
+      id:10,
       image: 'drinks.png',
       title: 'DRINKS',
       description:'Tea ,coffee,soda and yogurt-milk-based drinks.',
     },
+   
     {
-      id:10,
+      id:12,
       image: 'kids.png',
-      title: 'BHATURA & POORI',
-      description:'Fluffy deep-fried bread made from all purpose flour or wheat flour.',
+      title: 'KIDS',
+      description:'',
     },
+ 
     
   ];
   export default sectionData;
