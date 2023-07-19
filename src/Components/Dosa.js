@@ -6,7 +6,8 @@ import {
 } from "react-icons/ai";
 import "./Dosa.css";
 import "../utils/css/Gloablcss.css";
-import { IoMdCall } from "react-icons/io";
+import  { IoMdCall}  from "react-icons/io";
+
 import { ModalComponent } from "./Modal";
 import MenuItem from "./MenuItems";
 import { MdLocationOn } from "react-icons/md";
@@ -20,9 +21,9 @@ const Dosa = () => {
     "https://www.google.com/maps/place/Falcon+Cafe+Lounge/@30.6958945,76.8384238,15z/data=!4m2!3m1!1s0x0:0xa9092e84e9a1ae69?sa=X&ved=2ahUKEwj2geG56JeAAxVJat4KHViPBwEQ_BJ6BAhcEAA&ved=2ahUKEwj2geG56JeAAxVJat4KHViPBwEQ_BJ6BAh-EAg";
 
   return (
-    <div className="fixed w-screen">
+    <div className="w-screen h-screen fixed">
       <div
-        className={`flex flex-row items-center justify-between p-2 w-full creamcolor ${
+        className={`flex flex-row items-center justify-between p-4 w-full creamcolor ${
           isOpen ? "fixed" : ""
         }`}
       >
@@ -30,10 +31,10 @@ const Dosa = () => {
           <h1 className="circle circle-text  mb-4 xl:w-8 xl:h-8 xl:mb-6 mobile-hidden">
             x
           </h1>
-          <div className="web-view-only  ">
+          <div className="web-view-only">
             <AiOutlineMenu
               color="orange"
-              size="0.6em"
+              size="0.8em"
               className="mt-[8px] ml-[-12px]"
               onClick={() => setShowModal(true)}
             />
@@ -56,7 +57,9 @@ const Dosa = () => {
                           </div>
                           <div className="flex flex-col items-center">
                             <a
-                              href={"https://www.google.com/maps/place/Falcon+Cafe+Lounge/@30.6958945,76.8384238,15z/data=!4m2!3m1!1s0x0:0xa9092e84e9a1ae69?sa=X&ved=2ahUKEwj2geG56JeAAxVJat4KHViPBwEQ_BJ6BAhcEAA&ved=2ahUKEwj2geG56JeAAxVJat4KHViPBwEQ_BJ6BAh-EAg"}
+                              href={
+                                "https://www.google.com/maps/place/Falcon+Cafe+Lounge/@30.6958945,76.8384238,15z/data=!4m2!3m1!1s0x0:0xa9092e84e9a1ae69?sa=X&ved=2ahUKEwj2geG56JeAAxVJat4KHViPBwEQ_BJ6BAhcEAA&ved=2ahUKEwj2geG56JeAAxVJat4KHViPBwEQ_BJ6BAh-EAg"
+                              }
                               target="_blank"
                               rel="noopener noreferrer"
                             >
@@ -112,16 +115,17 @@ const Dosa = () => {
               </>
             ) : null}
           </div>
-          <h1 className="text-orange-500 font-bold xl:text-xl max-sm:text-[18px]">
-            DOSA
+          <h1 className="text-orange-500 font-bold xl:text-xxl max-sm:text-[24px] max-sm:mt-1   ">
+            Dosa
           </h1>
-          <h1 className="text-green-600 font-bold xl:text-xl max-sm:text-[18px]">
-            HOUSE.
+          <h1 className="text-green-600 font-bold  xl:text-xxl max-sm:text-[24px] max-sm:mt-1 ">
+            House.
           </h1>
+        
         </div>
-        <div className="flex space-x-2 justify-end text-sm hidden sm:block">
+        <div className="flex space-x-2 justify-end text-md hidden sm:block">
           <div class=" dropdown inline-block relative">
-            <button class=" creamcolor text-gray-700 font-semibold text-sm py-2 px-4 rounded inline-flex items-center">
+            <button class=" creamcolor text-gray-700 font-semibold text-md py-2 px-4 rounded inline-flex items-center">
               <span class="mr-1">Download Our App</span>
               <svg
                 class="fill-current h-4 w-4"
@@ -135,17 +139,17 @@ const Dosa = () => {
             <ul class="dropdown-menu absolute  creamcolor w-40 hidden text-black mt-4  z-10">
               <li className=" rounded-t flex items-center justify-center whitespace-no-wrap p-2">
                 <img src="play.png" alt="" className="h-6 w-6" />
-                <h1 class="text-[12px] ml-2">Play Store</h1>
+                <h1 class="text-[14px] ml-2">Play Store</h1>
               </li>
               <li className="rounded-t flex  items-center justify-center whitespace-no-wrap p-2">
                 <img src="apple.png" alt="" className="h-6 w-6" />
 
-                <h1 class="text-[12px] ml-2">App Store</h1>
+                <h1 class="text-[14px] ml-2">App Store</h1>
               </li>
             </ul>
           </div>
           <div class=" dropdown inline-block relative">
-            <button class=" creamcolor text-gray-700 font-semibold text-sm py-2 px-4 rounded inline-flex items-center">
+            <button class=" creamcolor text-gray-700 font-semibold text-md py-2 px-4 rounded inline-flex items-center">
               <span class="mr-1">Our location</span>
               <svg
                 class="fill-current h-4 w-4"
@@ -157,19 +161,19 @@ const Dosa = () => {
             </button>
             <ul class="dropdown-menu absolute hidden text-black  mt-4">
               <li class="">
-                <h1 class="flex rounded-t creamcolor  h-10 w-40 p-1  items-center justify-center text-[12px]  whitespace-no-wrap">
+                <h1 class="flex rounded-t creamcolor  h-10 w-40 p-1  items-center justify-center text-[14px]  whitespace-no-wrap">
                   <MdLocationOn size="1.5em" color="green" />
                   Sector 22
                 </h1>
-                <h1 class="flex rounded-t creamcolor  h-10 w-40 p-1  items-center justify-center text-[12px]  whitespace-no-wrap">
+                <h1 class="flex rounded-t creamcolor  h-10 w-40 p-1  items-center justify-center text-[14px]  whitespace-no-wrap">
                   <MdLocationOn size="1.5em" color="green" />
                   Sector 22
                 </h1>
               </li>
             </ul>
           </div>
-          <div class=" dropdown inline-block relative">
-            <button class=" creamcolor text-gray-700 font-semibold text-sm py-2 px-4 rounded inline-flex items-center">
+          <div class=" dropdown inline-block relative ">
+            <button class=" creamcolor text-gray-700 font-semibold text-md py-2 px-4 rounded inline-flex items-center ">
               <span class="mr-1">Timings</span>
               <svg
                 class="fill-current h-4 w-4"
@@ -179,16 +183,16 @@ const Dosa = () => {
                 <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
               </svg>
             </button>
-            <ul class="dropdown-menu w-52 px-2 absolute creamcolor hidden text-black mt-4">
+            <ul class="dropdown-menu w-56 px-2 absolute creamcolor hidden text-black">
               <li class="flex align-middle items-center justify-start p-1">
-                <AiOutlineClockCircle color="green" size="1em" className="" />
-                <h1 className="text-[12px] ml-2 font-medium ">
+                <AiOutlineClockCircle color="green" size="1em" className="mt-4" />
+                <h1 className="text-[14px]  mt-4 ml-2">
                   Mon-Fri (8:00am to 9:00pm)
                 </h1>
               </li>
               <li class="flex align-middle items-center justify-start p-1">
                 <AiOutlineClockCircle color="green" size="1em" className="" />
-                <h1 className="text-[12px] ml-2 font-medium ">
+                <h1 className="text-[14px] ml-2 ">
                   Sat & Sun Closed
                 </h1>
               </li>
@@ -196,7 +200,7 @@ const Dosa = () => {
           </div>
 
           <div class=" dropdown inline-block relative">
-            <button class=" creamcolor text-gray-700 font-semibold text-sm py-2 px-4 rounded inline-flex items-center">
+            <button class=" creamcolor text-gray-700 font-semibold text-md py-2 px-4 rounded inline-flex items-center">
               <span class="mr-1">Contact Us</span>
               <svg
                 class="fill-current h-4 w-4"
@@ -209,11 +213,11 @@ const Dosa = () => {
             <ul class="dropdown-menu absolute right-0 w-52 creamcolor hidden text-black mt-4">
               <li class="flex align-middle items-center justify-start p-1">
                 <IoMdCall color="green" size="1.5em" className="" />
-                <h1 className="text-[12px] ml-2 font-medium">7888925456</h1>
+                <h1 className="text-[14px] ml-2 font-medium">7888925456</h1>
               </li>
               <li class="flex align-middle items-center justify-start p-1">
                 <AiOutlineMail color="skyblue" size="1.2em" className="" />
-                <h1 className="text-[12px] ml-2 font-medium">
+                <h1 className="text-[14px] ml-2 font-medium">
                   example@gmail.com
                 </h1>
               </li>
@@ -221,53 +225,49 @@ const Dosa = () => {
           </div>
         </div>
 
-        <div className="flex web-view-only">
-          <ModalComponent isOpen={DownloadOpen}>
-            <div className="bg-transparent rounded-lg p-10 ">
+        <div className="flex web-view-only ">
+          <div>
+          <button
+            onClick={() => setIsDownloadOpen(true)}
+            style={{ boxShadow: "0 4px 8px rgba(0, 0, 0, 0.4) ,", text: "md" }}
+            className="bg-orange-400 rounded-full text-xs font-semibold  p-2  text-white"
+          >
+            Download App
+          </button>
+          </div>
+          <div className="">
+          <a href="tel:+919348557381" className="callhover p-1 ml-2 h-8 w-10 ">
+            <IoMdCall className="mb-1 ion-md" color="green" size="1.4em"
+             />
+          </a>
+          </div>
+          <ModalComponent isOpen={DownloadOpen} className="">
+            <div className="bg-transparent filter backdrop-blur h-[120vh] rounded-lg p-10 flex justify-center items-center">
               <div
                 onClick={() => setIsDownloadOpen(false)}
                 className="justify-between rounded-full"
               >
-                <div className="grad  p-4 place-items-center justify-center align-middle text-center self-center rounded-lg">
-                  <h1 className="font-semibold text-md text-white px-6 py-1">
-                    Download Now
+                <div className="grad p-2 place-items-center justify-center align-middle  text-center self-center rounded-lg">
+                  <h1 className="font-semibold text-xl text-white px-6 py-1">
+                    Download App
                   </h1>
-                  <div className="flex p-4 justify-between ">
-                    <div className="flex justify-center items-center bg-slate-100 shadow-orange-500 rounded-xl shadow-md max-w-[360px] w-12 h-12 sm:max-w-none p-1.5 sm:w-16 sm:h-16">
-                      <img
-                        src="play.png"
-                        alt="pic"
-                        className="w-fit h-fit"
-                      ></img>
+                  <div className="flex p-6 justify-around ">
+                    <div className="flex  bg-slate-100 shadow-orange-500 rounded-xl shadow-md max-w-[360px] w-20 h-20 sm:max-w-none p-1.5 sm:w-16 sm:h-16">
+                      <img src="play.png" alt="pic" className="p-1"></img>
                     </div>
-                    <div className="flex justify-center items-center bg-slate-100 shadow-orange-500 rounded-xl shadow-md w-12 h-12 max-w-[360px] p-1.5 sm:max-w-none sm:w-16 sm:h-16">
-                      <img
-                        src="apple.png"
-                        alt="pic"
-                        className="w-fit h-fit"
-                      ></img>
+                    <div className="flex  bg-slate-100 shadow-orange-500 rounded-xl shadow-md w-20 h-20 max-w-[360px] p-1.5 sm:max-w-none sm:w-16 sm:h-16">
+                      <img src="apple.png" alt="pic" className="p-1"></img>
                     </div>
                   </div>
 
-                  <div className="place-items-center justify-center align-middle text-center self-center grid">
-                    <button className="px-6 r-0 l-0 rounded-full text-white  bg-orange-400 mt-6 absolute">
+                    <button className="px-10 m-3 py-1 rounded-full text-white  bg-orange-400  font-bold ">
                       Close
                     </button>
-                  </div>
+              
                 </div>
               </div>
             </div>
           </ModalComponent>
-          <button
-            onClick={() => setIsDownloadOpen(true)}
-            style={{ boxShadow: "0 4px 8px rgba(0, 0, 0, 0.4) ,", text: "md" }}
-            className="bg-orange-400 rounded-full text-xs px-1 py-1 text-white"
-          >
-            Download App
-          </button>
-          <a href="tel:+919348557381">
-            <IoMdCall className="mb-1" color="green" size="1.4em" />
-          </a>
         </div>
       </div>
       <MenuItem />

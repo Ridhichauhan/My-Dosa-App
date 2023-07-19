@@ -2,7 +2,7 @@ const sectionData = [
     {
       id:1,
       image: 'dosaa.png',
-      title: 'PLAIN & ONION DOSAS',
+      title: 'DOSAS',
       description:'A thin pancake made from fermented batter of ground black lentils and rice.',
     },
     {

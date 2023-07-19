@@ -4,7 +4,6 @@
 
 .circle
 {
-
   border-radius: 50%;
   background-color: #f00; 
   display: flex;
@@ -17,6 +16,7 @@
   color: white;
   font-size:18px;
 }
+
 .circcle{
 	border-radius: 50%;
 	background-color: green; 
@@ -24,7 +24,7 @@
 	justify-content: center;
 	align-items: center;
 	width: 8vw;
-	height: 5vh;
+	height: 12px;
 	margin-top: 4px;
 }
 
@@ -37,6 +37,10 @@
 body {
   font-family: sans-serif;
 }
+.modelheight{
+	height: 120vh;
+
+}
 .scroll-container-food{
 	max-height: 90vh; 
 	overflow-y: auto;
@@ -44,10 +48,10 @@ body {
     scrollbar-color: transparent transparent;
 }
 .scroll-container-food::-webkit-scrollbar {
-	width: 6px; /* Adjust the width of the scrollbar */
+	width: 8px; /* Adjust the width of the scrollbar */
 	background-color: transparent; /* Set the background color of the scrollbar track */
   }
-  
+
   .scroll-container-food::-webkit-scrollbar-thumb {
 	background-color: transparent; /* Set the color of the scrollbar thumb */
   }
@@ -79,6 +83,7 @@ body {
 	width: 80%;
 	margin: 30px 10%;
 }
+
 
 .field {
 	position: relative;
@@ -120,11 +125,13 @@ body {
 	background-image: linear-gradient(180deg, #f5901e 0%, rgb(250, 229, 208) 68%);
 	border-radius: 17px;
 	border: none;
+	width: 96vw;
+	height: 200px;
   }
   .iconn {
 	width: 10vw;
 	height: 4vh;
-	margin-left: 9px;
+	/* margin-left: 9px; */
 	top: 80px;
   }
   
