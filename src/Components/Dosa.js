@@ -22,8 +22,9 @@ const Dosa = () => {
 
   return (
     <div className="w-screen h-screen fixed">
+    
       <div
-        className={`flex flex-row items-center justify-between p-4 w-full creamcolor ${
+      className={`flex flex-row items-center justify-between p-5 w-full bg-[#FAFAFA] ${
           isOpen ? "fixed" : ""
         }`}
       >
@@ -33,7 +34,7 @@ const Dosa = () => {
           </h1>
           <div className="web-view-only">
             <AiOutlineMenu
-              color="orange"
+              color="#ff9800"
               size="0.8em"
               className="mt-[8px] ml-[-12px]"
               onClick={() => setShowModal(true)}
@@ -115,17 +116,17 @@ const Dosa = () => {
               </>
             ) : null}
           </div>
-          <h1 className="text-orange-500 font-bold xl:text-xxl max-sm:text-[24px] max-sm:mt-1   ">
+          <h1 className="text-[#ff9800] font-bold xl:text-xxl max-sm:text-[24px] max-sm:mt-1  style-name ">
             Dosa
           </h1>
-          <h1 className="text-green-600 font-bold  xl:text-xxl max-sm:text-[24px] max-sm:mt-1 ">
-            House.
+          <h1 className="text-[#4caf50] font-bold  xl:text-xxl max-sm:text-[24px] max-sm:mt-1 style-name ">
+            House
           </h1>
         
         </div>
         <div className="flex space-x-2 justify-end text-md hidden sm:block">
           <div class=" dropdown inline-block relative">
-            <button class=" creamcolor text-gray-700 font-semibold text-md py-2 px-4 rounded inline-flex items-center">
+            <button class=" bg-[#fafafa] text-black font-semibold text-md py-2 px-4 rounded inline-flex items-center">
               <span class="mr-1">Download Our App</span>
               <svg
                 class="fill-current h-4 w-4"
@@ -136,7 +137,7 @@ const Dosa = () => {
               </svg>
             </button>
 
-            <ul class="dropdown-menu absolute  creamcolor w-40 hidden text-black mt-4  z-10">
+            <ul class="dropdown-menu absolute  bg-[#fafafa] w-40 hidden text-black mt-4  z-10">
               <li className=" rounded-t flex items-center justify-center whitespace-no-wrap p-2">
                 <img src="play.png" alt="" className="h-6 w-6" />
                 <h1 class="text-[14px] ml-2">Play Store</h1>
@@ -149,7 +150,7 @@ const Dosa = () => {
             </ul>
           </div>
           <div class=" dropdown inline-block relative">
-            <button class=" creamcolor text-gray-700 font-semibold text-md py-2 px-4 rounded inline-flex items-center">
+            <button class=" bg-[#fafafa] text-gray-700 font-semibold text-md py-2 px-4 rounded inline-flex items-center">
               <span class="mr-1">Our location</span>
               <svg
                 class="fill-current h-4 w-4"
@@ -161,11 +162,11 @@ const Dosa = () => {
             </button>
             <ul class="dropdown-menu absolute hidden text-black  mt-4">
               <li class="">
-                <h1 class="flex rounded-t creamcolor  h-10 w-40 p-1  items-center justify-center text-[14px]  whitespace-no-wrap">
+                <h1 class="flex rounded-t bg-[#fafafa] h-10 w-40 p-1  items-center justify-center text-[14px]  whitespace-no-wrap">
                   <MdLocationOn size="1.5em" color="green" />
                   Sector 22
                 </h1>
-                <h1 class="flex rounded-t creamcolor  h-10 w-40 p-1  items-center justify-center text-[14px]  whitespace-no-wrap">
+                <h1 class="flex rounded-t bg-[#fafafa] h-10 w-40 p-1  items-center justify-center text-[14px]  whitespace-no-wrap">
                   <MdLocationOn size="1.5em" color="green" />
                   Sector 22
                 </h1>
@@ -173,7 +174,7 @@ const Dosa = () => {
             </ul>
           </div>
           <div class=" dropdown inline-block relative ">
-            <button class=" creamcolor text-gray-700 font-semibold text-md py-2 px-4 rounded inline-flex items-center ">
+            <button class=" bg-[#fafafa] text-gray-700 font-semibold text-md py-2 px-4 rounded inline-flex items-center ">
               <span class="mr-1">Timings</span>
               <svg
                 class="fill-current h-4 w-4"
@@ -183,7 +184,7 @@ const Dosa = () => {
                 <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
               </svg>
             </button>
-            <ul class="dropdown-menu w-56 px-2 absolute creamcolor hidden text-black">
+            <ul class="dropdown-menu w-56 px-2 absolute bg-[#fafafa] hidden text-black">
               <li class="flex align-middle items-center justify-start p-1">
                 <AiOutlineClockCircle color="green" size="1em" className="mt-4" />
                 <h1 className="text-[14px]  mt-4 ml-2">
@@ -200,7 +201,7 @@ const Dosa = () => {
           </div>
 
           <div class=" dropdown inline-block relative">
-            <button class=" creamcolor text-gray-700 font-semibold text-md py-2 px-4 rounded inline-flex items-center">
+            <button class=" bg-[#fafafa] text-gray-700 font-semibold text-md py-2 px-4 rounded inline-flex items-center">
               <span class="mr-1">Contact Us</span>
               <svg
                 class="fill-current h-4 w-4"
@@ -210,7 +211,7 @@ const Dosa = () => {
                 <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
               </svg>
             </button>
-            <ul class="dropdown-menu absolute right-0 w-52 creamcolor hidden text-black mt-4">
+            <ul class="dropdown-menu absolute right-0 w-52 bg-[#fafafa] hidden text-black mt-4">
               <li class="flex align-middle items-center justify-start p-1">
                 <IoMdCall color="green" size="1.5em" className="" />
                 <h1 className="text-[14px] ml-2 font-medium">7888925456</h1>
@@ -225,22 +226,25 @@ const Dosa = () => {
           </div>
         </div>
 
-        <div className="flex web-view-only ">
-          <div>
+        <div className=" web-view-only">
+        <div className="flex space-x-2 ">
+          <div className="">
           <button
             onClick={() => setIsDownloadOpen(true)}
             style={{ boxShadow: "0 4px 8px rgba(0, 0, 0, 0.4) ,", text: "md" }}
-            className="bg-orange-400 rounded-full text-xs font-semibold  p-2  text-white"
+            className="bg-[#ff9800] rounded-full text-xs font-semibold mt-1 p-2 text-white"
           >
             Download App
           </button>
           </div>
           <div className="">
-          <a href="tel:+919348557381" className="callhover p-1 ml-2 h-8 w-10 ">
-            <IoMdCall className="mb-1 ion-md" color="green" size="1.4em"
-             />
+          <a href="tel:+919348557381">
+            <img src="calling.png" alt="" className="h-9 w-9" size="1.4em"></img> 
+           
           </a>
           </div>
+          </div>
+          
           <ModalComponent isOpen={DownloadOpen} className="">
             <div className="bg-transparent filter backdrop-blur h-[120vh] rounded-lg p-10 flex justify-center items-center">
               <div
@@ -271,6 +275,7 @@ const Dosa = () => {
         </div>
       </div>
       <MenuItem />
+      
     </div>
   );
 };

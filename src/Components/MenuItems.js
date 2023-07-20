@@ -25,55 +25,58 @@ const MenuItems = () => {
 
   return (
     <div className="">
-      <div className="flex h-[130px] justify-center  ml-[-10vh]">
         <form className={`form  ${isOpen ? "hidden" : ""}`}>
-          <div className="flex input-group justify-center items-center sm:ml-12 mt-[-20px] ">
+          <div className="w-screen flex justify-center mt-[-20px]">
             <div className="relative">
               <AiOutlineSearch
-                className="searchicon absolute max-sm:ml-20 ml-2 mt-4 left-0"
+                className="absolute left-0 mt-4 ml-4"
+                size={20}
                 color="gray"
               />
               <input
-                style={{paddingLeft:"6vh"}}
+                style={{ paddingLeft: "30px" }}
                 type="text"
-                className={` input searchdown ${isOpen ? "disabled" : ""}`}
+                className={`input searchdown ${isOpen ? "disabled" : ""}`}
                 readOnly={isOpen}
                 value={searchQuery}
                 onChange={handleSearch}
               />
-              <label
-               className="placeholder max-sm:ml-[72px] searchtext">Search Item</label>
+              <label className="placeholder max-sm:ml-[28px] searchtext">
+                Search Item
+              </label>
             </div>
           </div>
         </form>
-      </div>
-      <div className="scroll-container mt-[-50px]">
+
+      <div className="scroll-container mt-[-30px]">
         {filteredMenuItems.map((item, index) => (
           <div className="" key={index}>
             <div className="flex justify-center">
-              <div className="flex items-center justify-center space-x-2 w-[28vw] max-sm:w-[108vw] p-4 boxhover downbg" 
-               onClick={() => navigateToPage(item.id)}>
-              <div className="w-[18vw]">
-                <img src={item.image} className="h-20 w-24" alt=""/>
+              <div
+                className="flex items-center justify-center space-x-2 w-[28vw] max-sm:w-[130vw] p-4  boxhover downbg"
+                onClick={() => navigateToPage(item.id)}
+              >
+                <div className="w-[26vw] ml-4">
+                  <img src={item.image} className="h-26 w-26 mt-2" alt="" />
                 </div>
-                <div className="w-[68vw] ">
-                <div className="flex ">
-                  <h1 className="text-black text-left text-sm font-semibold">
-                    {item.title}
-                  </h1>
+                <div className="w-[54vw]">
+                  <div className="flex">
+                    <h1 className="text-black text-left max-sm:text-lg xl:text-lg font-semibold  style-name">
+                      {item.title}
+                    </h1>
                   </div>
                   <div className="flex items-center">
-                    <h1 className="text-gray-400 text-left text-sm font-semibold">
+                    <h1 className="text-gray-400 text-left text-sm font-semibold style-name">
                       {item.description}
                     </h1>
                   </div>
-                  </div>
+                </div>
 
-                  <div>
-                  <span className="icon-container ">
-                      <AiOutlineRight size={20} className="icon" />
-                    </span>
-                  </div>
+                <div>
+                  <span className="icon-container">
+                    <AiOutlineRight size={20} className="icon"/>
+                  </span>
+                </div>
               </div>
             </div>
           </div>

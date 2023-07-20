@@ -19,15 +19,25 @@
 
 .circcle{
 	border-radius: 50%;
-	background-color: green; 
+	background-color: #4caf50; 
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 8vw;
+	
+	/* width: 8vw;
 	height: 12px;
-	margin-top: 4px;
+	margin-top: 4px; */
 }
-
+.xl-screen {
+	height: 40px;
+	width: 40px;
+	left: -14px;
+	position: relative;
+  }
+  .xl-screeen {
+	height: 24px;
+	width: 24px;
+  }
 @media (max-width: 360px) {
 	.circcle {
 	  height: 10px;
@@ -39,7 +49,6 @@ body {
 }
 .modelheight{
 	height: 120vh;
-
 }
 .scroll-container-food{
 	max-height: 90vh; 
@@ -50,14 +59,12 @@ body {
 .scroll-container-food::-webkit-scrollbar {
 	width: 8px; /* Adjust the width of the scrollbar */
 	background-color: transparent; /* Set the background color of the scrollbar track */
-  }
-
-  .scroll-container-food::-webkit-scrollbar-thumb {
+}
+.scroll-container-food::-webkit-scrollbar-thumb {
 	background-color: transparent; /* Set the color of the scrollbar thumb */
-  }
+}
   
-  /* For Firefox */
-  .scroll-container-food {
+   .scroll-container-food {
 	scrollbar-width: thin; /* Set the width of the scrollbar */
 	scrollbar-color: transparent transparent; /* Set the color of the scrollbar */
   }

@@ -3,7 +3,7 @@ const sectionData = [
       id:1,
       image: 'dosaa.png',
       title: 'DOSAS',
-      description:'A thin pancake made from fermented batter of ground black lentils and rice.',
+      description:'A thin pancake made from a fermented batter of ground black lentils and rice.',
     },
     {
       id:2,
@@ -21,13 +21,13 @@ const sectionData = [
       id:4,
       image: 'utpams.png',
       title: 'UTHAPAMS',
-      description:'Pancake made with fermented rice lentil batterand choice of toppings.',
+      description:'Pancake made with fermented rice lentil batter and choice of toppings.',
     },
     {
       id:5,
       image: 'idly.png',
       title: 'IDLY-VADA SAMBAR',
-      description:'Idly is a rice cake made by steaming and Vada is a fried  donut shaped snack.',
+      description:'Idly is a rice cake made by steaming and vada is a fried  donut shaped snack.',
     },
 
     {
@@ -64,7 +64,7 @@ const sectionData = [
       id:10,
       image: 'drinks.png',
       title: 'DRINKS',
-      description:'Tea ,coffee,soda and yogurt-milk-based drinks.',
+      description:'Tea,coffee,soda and yogurt-milk-based drinks.',
     },
    
     {
