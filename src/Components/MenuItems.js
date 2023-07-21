@@ -26,10 +26,11 @@ const MenuItems = () => {
   return (
     <div className="">
         <form className={`form  ${isOpen ? "hidden" : ""}`}>
-          <div className="w-screen flex justify-center mt-[-20px]">
-            <div className="relative">
+          <div className="w-screen flex justify-center  mt-[-24px]">
+            <div className="relative  p-2 flex items-center justify-center md:justify-start">
+             
               <AiOutlineSearch
-                className="absolute left-0  ml-4 mt-4"
+                className="absolute left-0 searchicon"
                 size={20}
                 color="gray"
               />
@@ -41,7 +42,7 @@ const MenuItems = () => {
                 value={searchQuery}
                 onChange={handleSearch}
               />
-              <label className="placeholder text-md max-sm:ml-[28px] searchtext ">
+              <label className="placeholder text-md ml-[4vh] mt-[0.8vh] max-sm:ml-[28px] searchtext">
                 Search Item
               </label>
             </div>
