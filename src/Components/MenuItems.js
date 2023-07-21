@@ -29,19 +29,19 @@ const MenuItems = () => {
           <div className="w-screen flex justify-center mt-[-20px]">
             <div className="relative">
               <AiOutlineSearch
-                className="absolute left-0 mt-4 ml-4"
+                className="absolute left-0  ml-4 mt-4"
                 size={20}
                 color="gray"
               />
               <input
-                style={{ paddingLeft: "30px" }}
+                style={{ paddingLeft:"38px"}}
                 type="text"
                 className={`input searchdown ${isOpen ? "disabled" : ""}`}
                 readOnly={isOpen}
                 value={searchQuery}
                 onChange={handleSearch}
               />
-              <label className="placeholder max-sm:ml-[28px] searchtext">
+              <label className="placeholder text-md max-sm:ml-[28px] searchtext ">
                 Search Item
               </label>
             </div>
