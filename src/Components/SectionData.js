@@ -40,7 +40,7 @@ const sectionData = [
       id:7,
       image: 'noodles.png',
       title: 'DESI CHINESE & SOUPS',
-      description:'Variety of noodles,rice,manchurians & soup.',
+      description:'Variety of noodles, rice, manchurians & soup.',
     },
     {
       id:8,
@@ -64,7 +64,7 @@ const sectionData = [
       id:10,
       image: 'drinks.png',
       title: 'DRINKS',
-      description:'Tea,coffee,soda and yogurt-milk-based drinks.',
+      description:'Tea, coffee, soda and yogurt-milk-based drinks.',
     },
    
     {

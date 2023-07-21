@@ -1,8 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.circle
+/* back icon home screen */
+/* .circle
 {
   border-radius: 50%;
   background-color: #f00; 
@@ -15,97 +15,119 @@
   align-items: center;
   color: white;
   font-size:18px;
-}
+}   */
 
-.circcle{
-	border-radius: 50%;
-	background-color: #4caf50; 
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	
-	/* width: 8vw;
-	height: 12px;
-	margin-top: 4px; */
+/* mobile and web view hidden screen */
+
+@media (max-width: 767px) {
+  .mobile-hidden {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .web-view-only {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .hidden-mobile {
+    display: none;
+  }
+}
+/* dropdown  for web view */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+/* backicon for food items */
+.circcle {
+  border-radius: 50%;
+  background-color: #4caf50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .xl-screen {
-	height: 40px;
-	width: 40px;
-	left: -14px;
-	position: relative;
-  }
-  .xl-screeen {
-	height: 24px;
-	width: 24px;
-  }
+  height: 40px;
+  width: 40px;
+  left: -14px;
+  position: relative;
+}
+.xl-screeen {
+  height: 24px;
+  width: 24px;
+}
 @media (max-width: 360px) {
-	.circcle {
-	  height: 10px;
-	  width: 16px;
-	}
+  .circcle {
+    height: 10px;
+    width: 16px;
   }
+}
+.custom-margin {
+  margin-left: -10px !important;
+  position: relative;
+}
+
+/* scroll bar for food items screen */
+
+.scroll-container-food {
+  max-height: 90vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+.scroll-container-food::-webkit-scrollbar {
+  width: 8px;
+  background-color: transparent;
+}
+.scroll-container-food::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+.scroll-container-food {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+.scroll-container-food::-moz-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
+.scroll-container-food::-moz-scrollbar-thumb {
+  background-color: transparent;
+}
 body {
   font-family: sans-serif;
 }
-.modelheight{
+/* .modelheight{
 	height: 120vh;
-}
-.scroll-container-food{
-	max-height: 90vh; 
-	overflow-y: auto;
-	scrollbar-width: thin; 
-    scrollbar-color: transparent transparent;
-}
-.scroll-container-food::-webkit-scrollbar {
-	width: 8px; /* Adjust the width of the scrollbar */
-	background-color: transparent; /* Set the background color of the scrollbar track */
-}
-.scroll-container-food::-webkit-scrollbar-thumb {
-	background-color: transparent; /* Set the color of the scrollbar thumb */
-}
-  
-   .scroll-container-food {
-	scrollbar-width: thin; /* Set the width of the scrollbar */
-	scrollbar-color: transparent transparent; /* Set the color of the scrollbar */
-  }
-  
-  .scroll-container-food::-moz-scrollbar {
-	width: 6px; /* Adjust the width of the scrollbar */
-	background-color: transparent; /* Set the background color of the scrollbar track */
-  }
-  
-  .scroll-container-food::-moz-scrollbar-thumb {
-	background-color: transparent; /* Set the color of the scrollbar thumb */
-  }
-.label-before {
+} */
+
+/* .label-before {
 	line-height: 20px;
 	font-size: 12px;
 	top: -10px;
 	background: #fff;
 	padding: 0 6px;
 	left: 9px;
-}
-
+} */
+/* 
 .container {
 	width: 80%;
 	margin: 30px 10%;
-}
+} */
 
-
-.field {
-	position: relative;
-	margin-bottom: 15px;
-	label::before {
-		content: attr(title);
-		position: absolute;
-		top: 0;
-		left: 15px;
-		line-height: 40px;
-		font-size: 14px;
-		color: #777;
-		transition: 300ms all;
-	}
-	input {
+/* .field {
+  position: relative;
+  margin-bottom: 15px;
+  label::before {
+    content: attr(title);
+    position: absolute;
+    top: 0;
+    left: 15px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #777;
+    transition: 300ms all;
+  }
+  input {
     width: 100%;
     line-height: 40px;
     padding: 0 15px;
@@ -114,62 +136,45 @@ body {
     color: #222;
     border: 1px solid #ccc;
     border-radius: 3px;
-		&:focus {
-			outline: 0;
-			border-color: blue;
-		}
-		&:valid + label::before {
-			@extend .label-before;
-			content: attr(data-title);
-		}
-		&:focus + label::before {
-			@extend .label-before;
-			color: blue;
-		}
-	}
-}
-.grad {
-	background-image: linear-gradient(180deg, #f5901e 0%, rgb(250, 229, 208) 68%);
-	border-radius: 17px;
-	border: none;
-	width: 96vw;
-	height: 200px;
-  }
-  .iconn {
-	width: 10vw;
-	height: 4vh;
-	/* margin-left: 9px; */
-	top: 80px;
-  }
-  
-  .icoon {
-	/* left: 156px;
-	top: 80px; */
-	width: 12vw;
-	height: 6vh;
-  }
-
-  
-  @media (max-width: 480px) {
-	.iconn {
-	  width: 10px;
-	  height: 6px;
-	  margin-left: 8px;
-	}
-	
-	.icoon {
-	  margin-left: 6px;
-	  width: 18px;
-	  height: 16px;
-	}
-  }
-  .dropdown:hover .dropdown-menu {
-	display: block;
-  }
-
-    @media (max-width: 768px) {
-    .hidden-mobile {
-      display: none;
+    &:focus {
+      outline: 0;
+      border-color: blue;
+    }
+    &:valid + label::before {
+      @extend .label-before;
+      content: attr(data-title);
+    }
+    &:focus + label::before {
+      @extend .label-before;
+      color: blue;
     }
   }
-  
+} */
+/* 
+.iconn {
+  width: 10vw;
+  height: 4vh;
+  margin-left: 9px;
+  top: 80px;
+}
+
+.icoon {
+  left: 156px;
+	top: 80px;
+  width: 12vw;
+  height: 6vh;
+} */
+/* 
+@media (max-width: 480px) {
+  .iconn {
+    width: 10px;
+    height: 6px;
+    margin-left: 8px;
+  }
+
+  .icoon {
+    margin-left: 6px;
+    width: 18px;
+    height: 16px;
+  }
+} */

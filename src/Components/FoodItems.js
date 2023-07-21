@@ -3,7 +3,7 @@ import { items_lists } from "../utils/css/dummydata/Carddata";
 import { MdOutlineArrowBack } from "react-icons/md";
 import { useNavigate, useParams } from "react-router-dom";
 import sectionData from "./SectionData";
-import img from '../assets/images/calling.png'
+import img from "../assets/images/calling.png";
 const FoodItems = () => {
   const navigate = useNavigate();
   const { id } = useParams();
@@ -35,18 +35,24 @@ const FoodItems = () => {
         </div>
         <div className="">
           <a href="tel:+919348557381" className="image-link">
-            <img src={img} alt="test" className="mb-1  h-12 w-12"/>
+            <img src={img} alt="test" className="mb-1  h-12 w-12" />
           </a>
-          </div>
+        </div>
       </div>
       <div className="flex justify-center">
         <div className="">
           <div className="flex px-2 pt-2 justify-between items-start align-middle">
-             <h1 className="text-left  text-style ">{sectionData[id-1].title}</h1>
-             <a href="https://drive.google.com/uc?export=download&id=1DAqm0pn7JQRa1C1tTKOKKS6Rq0FmzXFw" target="_blank" rel="noopener noreferrer">
-            <button className="bg-[#ff9800] text-white rounded-full h-8 w-32 text-sm  ">
-              Download Menu
-            </button>
+            <h1 className="text-left  text-style ">
+              {sectionData[id - 1].title}
+            </h1>
+            <a
+              href="https://drive.google.com/uc?export=download&id=1DAqm0pn7JQRa1C1tTKOKKS6Rq0FmzXFw"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="bg-[#ff9800] text-white rounded-full h-8 w-32 text-sm  ">
+                Download Menu
+              </button>
             </a>
           </div>
           <div className="w-[24vw] max-sm:w-[100vw] scroll-container-food">
@@ -56,7 +62,10 @@ const FoodItems = () => {
                 className="flex bg-white justify-between my-6 px-2 py-4 border-b ml-2"
               >
                 <div>
-                  <h1 className="flex text-black text-[18px] font-bold style-name"> {item.name}</h1>
+                  <h1 className="flex text-black text-[18px] font-bold style-name">
+                    {" "}
+                    {item.name}
+                  </h1>
                   <div className="flex text-black  text-[14px] font-semibold ">
                     <h1 className="text-[#9e9e9e] mt-1 max-sm:text-[14px] price-style">
                       Price:
@@ -73,7 +82,7 @@ const FoodItems = () => {
                   </div>
                 </div>
                 <button className="bg-red-100 h-8  w-20 mr-2 rounded-full text-red-500 text-xs border-b">
-                  +  ADD
+                  + ADD
                 </button>
               </div>
             ))}
