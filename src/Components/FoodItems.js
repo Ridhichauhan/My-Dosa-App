@@ -4,13 +4,14 @@ import { MdOutlineArrowBack } from "react-icons/md";
 import { useNavigate, useParams } from "react-router-dom";
 import sectionData from "./SectionData";
 import img from "../assets/images/calling.png";
+
 const FoodItems = () => {
   const navigate = useNavigate();
   const { id } = useParams();
   const navigateToPage = () => {
     navigate("/Dosa");
   };
-
+  
   return (
     <div className="fixed w-screen">
       <div className="flex flex-row items-center justify-between p-4 w-full bg-[#FAFAFA]">
@@ -55,6 +56,7 @@ const FoodItems = () => {
               </button>
             </a>
           </div>
+         
           <div className="w-[24vw] max-sm:w-[100vw] scroll-container-food">
             {items_lists[id - 1].map((item) => (
               <div
@@ -94,3 +96,4 @@ const FoodItems = () => {
 };
 
 export default FoodItems;
+

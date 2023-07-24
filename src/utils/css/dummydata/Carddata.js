@@ -28,68 +28,80 @@ export const Plain_Dosa = [
   { id: 15, name: "ONION DOSA", price: { price: 10.99, tax: 1.1 } },
   { id: 16, name: "ONION MASALA DOSA", price: { price: 11.49, tax: 1.15 } },
   { id: 17, name: "ONION CHILLI DOSA", price: { price: 10.99, tax: 1.1 } },
-  { id: 18, name: "ONION CHILLI MASALA DOSA",price: { price: 11.49, tax: 1.15 },},
+  {
+    id: 18,
+    name: "ONION CHILLI MASALA DOSA",
+    price: { price: 11.49, tax: 1.15 },
+  },
   { id: 19, name: "PALAK DOSA", price: { price: 11.99, tax: 1.15 } },
   { id: 20, name: "PALAK MASALA DOSA", price: { price: 11.99, tax: 1.2 } },
   { id: 21, name: "PALAK PANEER DOSA", price: { price: 13.49, tax: 1.35 } },
   { id: 22, name: "BASIL PALAK DOSA", price: { price: 12.49, tax: 1.25 } },
-  { id: 23, name: "BASIL PALAK MASALA DOSA", price: { price: 12.29, tax: 1.3 },},
+  {
+    id: 23,
+    name: "BASIL PALAK MASALA DOSA",
+    price: { price: 12.29, tax: 1.3 },
+  },
 ];
 export const fusion_Pesarattu_dosa = [
-  { id: 1, name: "SPRING DOSA", price: { price: 10, tax:1.30 } },
-  { id: 2, name: "NOODLE DOSA", price: { price: 10, tax:1.30 } },
-  { id: 3, name: "SCHEZWAN DOSA", price: { price: 10, tax:1.15 } },
-  { id: 4, name: "SCHEZWAN MASALA DOSA", price: { price: 10, tax:1.30 } },
-  { id: 5, name: "SCHEZWAN NOODLE DOSA", price: { price: 10, tax:1.30 } },
-  { id: 6, name: "CHAAT MASALA DOSA", price: { price: 10, tax:1.30 } },
-  { id: 7, name: "MUSHROOM DOSA", price: { price: 10, tax:1.30 } },
-  { id: 8, name: "ONION CHEESE CHILI DOSA", price: { price: 10, tax:1.25 } },
-  { id: 9, name: "PIZZA DOSA", price: { price: 10, tax:1.30 } },
-  { id: 10, name: "SANDWICH DOSA", price: { price: 10, tax:1.30 } },
-  { id: 11, name: "PAV BHAJI MASALA DOSA", price: { price: 10, tax:1.3 } },
-  { id: 12, name: "PESARATTU DOSA", price: { price: 10, tax:1.20 } },
+  { id: 1, name: "SPRING DOSA", price: { price: 10, tax: 1.3 } },
+  { id: 2, name: "NOODLE DOSA", price: { price: 10, tax: 1.3 } },
+  { id: 3, name: "SCHEZWAN DOSA", price: { price: 10, tax: 1.15 } },
+  { id: 4, name: "SCHEZWAN MASALA DOSA", price: { price: 10, tax: 1.3 } },
+  { id: 5, name: "SCHEZWAN NOODLE DOSA", price: { price: 10, tax: 1.3 } },
+  { id: 6, name: "CHAAT MASALA DOSA", price: { price: 10, tax: 1.3 } },
+  { id: 7, name: "MUSHROOM DOSA", price: { price: 10, tax: 1.3 } },
+  { id: 8, name: "ONION CHEESE CHILI DOSA", price: { price: 10, tax: 1.25 } },
+  { id: 9, name: "PIZZA DOSA", price: { price: 10, tax: 1.3 } },
+  { id: 10, name: "SANDWICH DOSA", price: { price: 10, tax: 1.3 } },
+  { id: 11, name: "PAV BHAJI MASALA DOSA", price: { price: 10, tax: 1.3 } },
+  { id: 12, name: "PESARATTU DOSA", price: { price: 10, tax: 1.2 } },
   { id: 13, name: "PESARATTU MASALA DOSA", price: { price: 10, tax: 1.25 } },
-  { id: 14, name: "PESARATTU UPMA DOSA", price: { price: 10, tax:1.30 } },
+  { id: 14, name: "PESARATTU UPMA DOSA", price: { price: 10, tax: 1.3 } },
 ];
 export const Rava_dosa = [
-  { id: 1, name: "RAVA PLAIN DOSA", price: { price: 10, tax:1.20 } },
-  { id: 2, name: "RAVA MASALA DOSA", price: { price: 10, tax:1.30 } },
-  { id: 3, name: "RAVA ONION DOSA", price: { price: 10, tax:1.25 } },
-  { id: 4, name: "RAVA ONION MASALA DOSA", price: { price: 10, tax:1.30 } },
-  { id: 5, name: "RAVA PANEER DOSA", price: { price: 10, tax:1.45 } },
-  { id: 6, name: "RAVA PANEER ONION DOSA", price: { price: 10, tax: 1.50 } },
+  { id: 1, name: "RAVA PLAIN DOSA", price: { price: 10, tax: 1.2 } },
+  { id: 2, name: "RAVA MASALA DOSA", price: { price: 10, tax: 1.3 } },
+  { id: 3, name: "RAVA ONION DOSA", price: { price: 10, tax: 1.25 } },
+  { id: 4, name: "RAVA ONION MASALA DOSA", price: { price: 10, tax: 1.3 } },
+  { id: 5, name: "RAVA PANEER DOSA", price: { price: 10, tax: 1.45 } },
+  { id: 6, name: "RAVA PANEER ONION DOSA", price: { price: 10, tax: 1.5 } },
   { id: 7, name: "RAVA MYSORE MASALA DOSA", price: { price: 10, tax: 1.45 } },
 ];
 export const uthapam_dosa = [
-  { id: 1, name: "PLAIN UTHAPAM", price: { price: 10, tax: 0.80 } },
-  { id: 2, name: "ONION UTHAPAM", price: { price: 10, tax: 1.10 } },
-  { id: 3, name: "ONION CHILLI UTHAPAM", price: { price: 10, tax: 1.10 } },
-  { id: 4, name: "TOMOTO UTHAPAM", price: { price: 10, tax: 1.10 } },
-  { id: 5, name: "TOMOTO ONION UTHAPAM", price: { price: 10, tax:1.10 } },
-  { id: 6, name: "MIX VEG. UTHAPAM", price: { price: 10, tax: 1.10} },
-  { id: 7, name: "MIX VEG. CHILLI UTHAPAM", price: { price: 10, tax:1.10 } },
-  { id: 8, name: "PANEER UTHAPAM", price: { price: 10, tax: 1.10} },
-  { id: 9, name: "PANEER CHILLI UTHAPAM", price: { price: 10, tax: 1.10} },
-  { id: 10, name: "PIZZA UTHAPAM", price: { price: 10, tax:1.10 } },
+  { id: 1, name: "PLAIN UTHAPAM", price: { price: 10, tax: 0.8 } },
+  { id: 2, name: "ONION UTHAPAM", price: { price: 10, tax: 1.1 } },
+  { id: 3, name: "ONION CHILLI UTHAPAM", price: { price: 10, tax: 1.1 } },
+  { id: 4, name: "TOMOTO UTHAPAM", price: { price: 10, tax: 1.1 } },
+  { id: 5, name: "TOMOTO ONION UTHAPAM", price: { price: 10, tax: 1.1 } },
+  { id: 6, name: "MIX VEG. UTHAPAM", price: { price: 10, tax: 1.1 } },
+  { id: 7, name: "MIX VEG. CHILLI UTHAPAM", price: { price: 10, tax: 1.1 } },
+  { id: 8, name: "PANEER UTHAPAM", price: { price: 10, tax: 1.1 } },
+  { id: 9, name: "PANEER CHILLI UTHAPAM", price: { price: 10, tax: 1.1 } },
+  { id: 10, name: "PIZZA UTHAPAM", price: { price: 10, tax: 1.1 } },
 ];
 export const Idly_menu = [
   { id: 1, name: "IDLY SEPERATE SAMBAR", price: { tax: 0.99, price: 0.75 } },
-  { id: 2, name: "VADA SEPERATE SAMBHAR", price: { tax: 0.99, price: 0.75} },
+  { id: 2, name: "VADA SEPERATE SAMBHAR", price: { tax: 0.99, price: 0.75 } },
   { id: 3, name: "IDLY DIP SAMBAR", price: { tax: 0.99, price: 0.75 } },
   { id: 4, name: "VADA DIP SAMBAR", price: { tax: 0.99, price: 0.75 } },
-  { id: 5, name: "IDLY VADA DIP SAMBAR", price: { tax: 0.99, price: 0.80} },
-  { id: 6, name: "IDLY VADA SEPERATE SAMBAR", price: { tax: 0.99, price: 0.80 } },
+  { id: 5, name: "IDLY VADA DIP SAMBAR", price: { tax: 0.99, price: 0.8 } },
+  {
+    id: 6,
+    name: "IDLY VADA SEPERATE SAMBAR",
+    price: { tax: 0.99, price: 0.8 },
+  },
   { id: 7, name: "1 EXTRA IDLY", price: { tax: 0.99, price: 0.25 } },
-  { id: 8, name: "1 EXTRA VADA", price: { tax: 0.99, price: 0.30} },
+  { id: 8, name: "1 EXTRA VADA", price: { tax: 0.99, price: 0.3 } },
 ];
 export const chaats_menu = [
-  { id: 1, name: "SAMOSA", price: { tax: 0.99, price:0.30 } },
+  { id: 1, name: "SAMOSA", price: { tax: 0.99, price: 0.3 } },
   { id: 2, name: "BHELPURI", price: { tax: 0.99, price: 0.95 } },
-  { id: 3, name: "PAANI POORI", price: { tax: 0.99, price: 0.30 } },
+  { id: 3, name: "PAANI POORI", price: { tax: 0.99, price: 0.3 } },
   { id: 4, name: "SEV POORI", price: { tax: 0.99, price: 0.95 } },
-  { id: 5, name: "DAHI POORI", price: { tax: 0.99, price: 1.00 } },
-  { id: 6, name: "PAV BHAJI", price: { tax: 0.99, price: 1.00 } },
-  { id: 7, name: "EXTRA PAV", price: { tax: 0.99, price: 0.25} },
+  { id: 5, name: "DAHI POORI", price: { tax: 0.99, price: 1.0 } },
+  { id: 6, name: "PAV BHAJI", price: { tax: 0.99, price: 1.0 } },
+  { id: 7, name: "EXTRA PAV", price: { tax: 0.99, price: 0.25 } },
   { id: 8, name: "VADA PAV", price: { tax: 0.99, price: 0.95 } },
   { id: 9, name: "MASALA PAV", price: { tax: 0.99, price: 9 } },
   { id: 10, name: "DAHI BHALLA", price: { tax: 0.99, price: 9 } },
@@ -114,16 +126,16 @@ export const Chinese_menu = [
   { id: 14, name: "HOT & SOUR SOUP", price: { tax: 0.99, price: 9 } },
   { id: 15, name: "VEG MANCHOW SOUP", price: { tax: 0.99, price: 9 } },
 ];
-export const burgers_menu =[
-  { id: 1, name: "PANEER KATHI ROLL", price: { tax: 0.99, price:0.30 } },
+export const burgers_menu = [
+  { id: 1, name: "PANEER KATHI ROLL", price: { tax: 0.99, price: 0.3 } },
   { id: 2, name: "PANEER TIKKA", price: { tax: 0.99, price: 0.95 } },
-  { id: 3, name: "SPRING ROLL", price: { tax: 0.99, price: 0.30 } },
+  { id: 3, name: "SPRING ROLL", price: { tax: 0.99, price: 0.3 } },
   { id: 4, name: "DAAL VADA", price: { tax: 0.99, price: 0.95 } },
-  { id: 5, name: "DAHI VADA", price: { tax: 0.99, price: 1.00 } },
-  { id: 6, name: "DHOKLA", price: { tax: 0.99, price: 1.00 } },
-  { id: 7, name: "INDIAN VEG BURGER", price: { tax: 0.99, price: 0.25} },
+  { id: 5, name: "DAHI VADA", price: { tax: 0.99, price: 1.0 } },
+  { id: 6, name: "DHOKLA", price: { tax: 0.99, price: 1.0 } },
+  { id: 7, name: "INDIAN VEG BURGER", price: { tax: 0.99, price: 0.25 } },
   { id: 8, name: "PANEER VEG BURGER", price: { tax: 0.99, price: 0.95 } },
-]
+];
 export const Kulcha_menu = [
   { id: 1, name: "ALOO PARANTHA", price: { tax: 0.99, price: 9 } },
   { id: 2, name: "PANEER PARANTHA", price: { tax: 0.99, price: 9 } },
@@ -159,10 +171,7 @@ export const Kids_menu = [
   { id: 2, name: "KIDS CONE DOSA", price: { tax: 0.99, price: 9 } },
   { id: 3, name: "KIDS CHEESE DOSA", price: { tax: 0.99, price: 9 } },
   { id: 4, name: "KIDS CHOCOLATE DOSA", price: { tax: 0.99, price: 9 } },
-  
-  
 ];
-
 
 export const items_lists = [
   Plain_Dosa,
@@ -177,6 +186,19 @@ export const items_lists = [
   Bhatura_menu,
   Drinks_menu,
   Kids_menu,
-  
- 
+];
+
+export const full_list = [
+  ...Plain_Dosa,
+...fusion_Pesarattu_dosa,
+...Rava_dosa,
+...uthapam_dosa,
+...Idly_menu,
+...chaats_menu,
+...Chinese_menu,
+...burgers_menu,
+...Kulcha_menu,
+...Bhatura_menu,
+...Drinks_menu,
+...Kids_menu,
 ];
